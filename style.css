@@ -1,0 +1,134 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Inconsolata', monospace;
+	color: #8c8f94;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
+	color: #333;
+}
+
+/*region Container breakpoints*/
+main {
+	margin: auto;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+	main {
+		width: 540px;
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	main {
+		width: 720px;
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	main {
+		width: 960px;
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	main {
+		width: 1140px;
+		max-width: 100%;
+	}
+}
+/*endregion*/
+
+header h1 {
+	font-size: 57px;
+	font-weight: 400;
+}
+header p {
+	font-size: 20px;
+}
+
+header img {
+	display: inline;
+	vertical-align: middle;
+	height: 1.2em;
+	max-width: 100%;
+}
+
+.projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.projects section {
+	width: 100%;
+	box-sizing: border-box;
+	--section-color: black;
+}
+
+@media (min-width: 768px) {
+	.projects section {
+		width: 50%;
+	}
+}
+
+.projects section h2 {
+	display: inline-block;
+}
+
+.projects section h2::after {
+	content: '';
+	display: block;
+	margin-top: 0.25em;
+	border-bottom: 2px solid var(--section-color);
+}
+
+.projects section.laravel {
+	--section-color: #f57774;
+}
+
+.projects section.angular {
+	--section-color: #42a5f5;
+}
+
+.projects section.misc-projects {
+	--section-color: #a7a7a7;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	margin-bottom: 1em;
+}
+
+ul li h3 {
+	font-family: 'Inconsolata', monospace;
+	font-weight: bold;
+	margin: 0;
+}
+
+ul li p {
+	margin: 0 0 0.5em;
+}
+
+ul li p a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.stars img {
+	vertical-align: bottom;
+}
