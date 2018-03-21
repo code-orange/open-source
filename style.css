@@ -104,6 +104,10 @@ header img {
 	--section-color: #a7a7a7;
 }
 
+.projects section.php {
+	--section-color: #4F5B93;
+}
+
 ul {
 	list-style: none;
 	margin: 0;
